@@ -17,6 +17,9 @@ export default class extends BaseSeeder {
       {
         name: 'author',
       },
+      {
+        name: 'user',
+      },
     ])
   }
 }

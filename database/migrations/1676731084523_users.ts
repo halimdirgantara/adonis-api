@@ -9,7 +9,6 @@ export default class extends BaseSchema {
       table.string('email', 255).notNullable().unique()
       table.string('name', 255).notNullable().unique()
       table.string('avatar').nullable()
-      table.integer('role_id').unsigned().references('id').inTable('roles').onDelete('STRICT')
       table.dateTime('email_verified_at').nullable()
       table.boolean('is_activated').notNullable().defaultTo(true)
       table.string('password', 180).notNullable()
